@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSHrxy5geEQm_NBR2y1zvzpRQxrHTsHDRHuUeNosAalWXUyN5_P");
+  background-size: cover;
+  font-family: sans-serif;
+  background-repeat: no-repeat;
+
+
+}
+.header p{
+  font-size: 30px;
+}
+.akuta{
+
+  color:white;
+  top: 4%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, 50%);
+
+  padding: 70px 30px;
+  margin-bottom: 20%;
+
+  text-align: center;
+
+
+}
+h2{
+  text-decoration-line: underline;color:black;
+  padding-left:-2px;
+  text-align: center;
+  font-size: 40px;
+  color:white ;
+}
+.akuta p{
+  margin: 0;
+  padding:0;
+  margin-bottom: 20px;
+  font-weight:bold;
+}
+.akuta input[type="submit"]{
+  border:none;
+  outline: none;
+  height:40px;
+  background: #fb2525;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+}
+.akuta input[type="submit"]:hover{
+  cursor:pointer;
+  background: yellow;
+  color:#000;
+}
+h1 {
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  color:white;
+  font-size: 50px;
+
+}
+p{
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+}
