@@ -18,7 +18,7 @@ css - Extensively used inorder to customize and restyle the webpages as a whole.
 markdown - Extensively create a detailed readme
 Javascript - Largely used for the interaction of the page with the user.
 ## Support and contact details
-incase you are not able to view certain applications or parts of the website feel free to submit an email to kaiserjohn52@gmail.com
+incase you are not able to view certain applications or parts of the website feel free to submit an email to Sylvianyokabi536@gmail.com
 
 ### License
 MIT
