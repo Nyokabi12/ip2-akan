@@ -2,47 +2,18 @@
   font-family: 'Montserrat', sans-serif;
   padding:0px;
   margin:0px;
+  color: wheat;
  }
  
  body{
-  background-image:url(../images/flag4.jpg);
+  background-image:url(images/background.jpg);
   background-repeat:no-repeat;
   background-size:cover;
   background-attachment:fixed;
  
  }
- 
- form{
-     background-color: white;
-  min-height: 200px;
-  width: 100%;
-  margin-top: 40px;
-  padding: 1%;
- }
- 
- .description h1{
-  text-align: center;
-  padding: 2%;
- }
- 
- .description p{
-  font-size:18px;
-  font-weight:500;
- }
- 
- .description ul{
-  font-size:18px;
-  font-weight:500;
- }
- 
- #submit{
- background-color: red;
- padding: 3px 20px 2px 20px;
- border: none;
- color: white;
- }
- 
  #day{
+   width:100%;
   border: none;
   padding: 5px;
   color: rgb(0, 0, 0);
@@ -50,6 +21,7 @@
  }
  
  #month{
+  width:100%;
   border: none;
   padding: 5px;
   color: rgb(0, 0, 0);
@@ -57,6 +29,7 @@
  }
  
  #year{
+  width:100%;
   border: none;
   padding: 5px;
   color: rgb(0, 0, 0);
@@ -68,7 +41,10 @@
   font-size:22px;
   font-weight:400;
  }
- Message Input
- 
- 
- Message Vinny_
+
+ #submit{
+  background-color:blue;
+  padding: 3px 20px 2px 20px;
+  border: none;
+  color: white;
+  }
