@@ -1,106 +1,77 @@
-function validateform(){
-  var day = Number(document.getElementById("day").value);
-  var month = Number(document.getElementById("month").value);
-  var year = Number(document.getElementById("year").value);
-  var century = Number(document.getElementById("centuary").value);
-  var genderSelected = document.getElementsByName("gender");
-  function genderselected() {
-      for (var gender of genderSelected) {
-          if (gender.checked){
-              return gender.value;
-          }
-      }
-  }
-  var genderValue = genderselected();
-  function dayValid () {
-      if (day < 1 || day > 31) {
-          alert("Invalid day")
-          return false;
-      } else {
-          return true;
-      }
-  }
-  function monthValid () {
-      if (month < 1 || month > 12) {
-          alert ("Invalid month");
-          return false;
-      } else {
-          return true;
-      }
-  }
-  var isDayValid = dayValid();
-  var isMonthValid = monthValid();
-  var dayIndex = Math.round(( ( (century/4) -2*century-1) + ((5*year/4) ) + ((26*(month+1)/10)) + day) % 7);
-var akanName;
-  if (genderValue === "male") {
-      switch(dayIndex) {
-              case 0:
-          akanName = "Kwasi";
-          alert("Born on Sunday : Kwasi");
-          break;
-          case 1:
-          akanName = "Kwadwo";
-          alert("Born on Monday : Kwadwo");
-          break;
-          case 2:
-          akanName = "Kwabena";
-          alert("Born on Tuesday : Kwabena");
-          break;
-          case 3:
-          akanName = "Kwaku";
-          alert("Born on Wednesday : Kwaku");
-          break;
-          case 4:
-          akanName = "Yaw";
-          alert("Born on Thursday : Yaw");
-          break;
-          case 5:
-          akanName = "Kofi";
-          alert("Born on Friday : Kofi");
-          break;
-          case 6:
-          akanName = "Kwame";
-          alert("Born on Saturday : Kwame");
-          break;
-          default:
-          akanName = "Please input the correct details!"
-          alert("Please input the correct details!");
-      }
-  } else if (genderValue = "female") {
-      switch(dayIndex) {
-              case 0:
-              akanName = "Akosua";
-              alert("Born on Sunday : Akosua");
-              break;
-              case 1:
-              akanName = "Adwoa";
-              alert("Born on Monday : Adwoa");
-              break;
-              case 2:
-              akanName = "Abenaa";
-              alert("Born on Tuesday : Abenaa");
-              break;
-              case 3:
-              akanName = "Akua";
-              alert("Born on Wednesday : Akua");
-              break;
-              case 4:
-              akanName = "Yaa";
-              alert("Born on Thursday : Yaa");
-              break;
-              case 5:
-              akanName = "Afua";
-              alert("Born on Friday : Afua");
-              break;
-              case 6:
-              akanName = "Ama";
-              alert(" Born on Saturday : Ama");
-              break;
-              default:
-              akanName = "Please input the correct details!"
-              alert("Please input the correct details!");
-          }
-  } else {
-              alert("Please try again with the correct data.");
-  }
-}
+<script>
+     function showName(){
+
+     var sex = document.querySelector('input[name="gender"]:checked').value;
+     var dbirth = document.getElementById("dob").value;
+
+     var birthd = dbirth.split(" ");
+     var mms = birthd[0];
+     var dds = birthd[1];
+     var yys = birthd[2];
+     var mm = parseInt(mms);
+     var dd = parseInt(dds);
+
+     var yearc = yys.split("");
+     var cc = yearc[0].concat(yearc[1]);
+     var yy = yearc[2].concat(yearc[3]);
+     var cc = parseInt(cc);
+     var yy = parseInt(yy);
+     fd = Math.round( ( (cc/4) -2*cc-1) + ((5*yy/4) ) + ((26*(mm+1)/10)) + dd ) % 7;
+
+     if(!sex){
+       alert('No sex was selected. Try again.');
+       return false;
+     }
+     else if(sex === 'Female' && fd === 0){
+       alert("Akosua");
+     }
+     else if(sex === 'Male' && fd === 0){
+         alert("Kwasi");
+     }
+     else if(sex === 'Female' && fd === 1){
+       alert("Adwoa");
+     }
+     else if(sex === 'Male' && fd === 1){
+         alert("Kwadwo");
+     }
+     else if(sex === 'Female' && fd === 2){
+       alert("Abenaa");
+     }
+     else if(sex === 'Male' && fd === 2){
+         alert("Kwabena");
+     }
+     else if(sex === 'Female' && fd === 3){
+       alert("Akua");
+     }
+     else if(sex === 'Male' && fd === 3){
+         alert("Kwaku");
+     }
+     else if(sex === 'Female' && fd === 4){
+       alert("Yaa");
+     }
+     else if(sex === 'Male' && fd === 4){
+         alert("Yaw");
+     }
+     else if(sex === 'Female' && fd === 5){
+       alert("Afua");
+     }
+     else if(sex === 'Male' && fd === 5){
+         alert("Kofi");
+     }
+     else if(sex === 'Female' && fd === 6){
+       alert("Ama");
+     }
+     else if(sex === 'Male' && fd === 6){
+         alert("Kwame");
+     }else{
+         alert("Try Again");
+     }
+
+
+     }
+
+         </script>
+Message Input
+
+
+Message
