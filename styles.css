@@ -4,6 +4,9 @@
   margin:0px;
   color: wheat;
  }
+ h1{
+   font-size: 60px;
+ }
  
  body{
   background-image:url(images/background.jpg);
