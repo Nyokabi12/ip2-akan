@@ -7,6 +7,9 @@
  h1{
    font-size: 60px;
  }
+ p{
+   font-size: 20px;
+ }
  
  body{
   background-image:url(images/background.jpg);
@@ -42,7 +45,7 @@
  ::placeholder {
   color: rgb(0, 0, 0);
   font-size:22px;
-  font-weight:400;
+  font-weight:300;
  }
 
  #submit{
