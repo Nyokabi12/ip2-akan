@@ -1,144 +1,74 @@
-body {
-  margin: 0;
-  padding: 0;
-  background-image: url("./images/background.jpg");
-  background-size: cover;
-  font-family: sans-serif;
-  background-repeat: no-repeat;
-
-
-}
-.header p{
-  font-size: 30px;
-}
-.akuta{
-
-  color:white;
-  top: 4%;
-  left: 50%;
-  position: absolute;
-  transform: translate(-50%, 50%);
-
-  padding: 70px 30px;
-  margin-bottom: 20%;
-
+*{
+  font-family: 'Montserrat', sans-serif;
+  padding:0px;
+  margin:0px;
+ }
+ 
+ body{
+  background-image:url(../images/flag4.jpg);
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-attachment:fixed;
+ 
+ }
+ 
+ form{
+     background-color: white;
+  min-height: 200px;
+  width: 100%;
+  margin-top: 40px;
+  padding: 1%;
+ }
+ 
+ .description h1{
   text-align: center;
-
-
-}
-h2{
-  text-decoration-line: underline;color:black;
-  padding-left:-2px;
-  text-align: center;
-  font-size: 40px;
-  color:white ;
-}
-.akuta p{
-  margin: 0;
-  padding:0;
-  margin-bottom: 20px;
-  font-weight:bold;
-}
-.akuta input[type="submit"]{
-  border:none;
-  outline: none;<script>
-  function showName(){
-
-  var sex = document.querySelector('input[name="gender"]:checked').value;
-  var dbirth = document.getElementById("dob").value;
-
-  var birthd = dbirth.split(" ");
-  var mms = birthd[0];
-  var dds = birthd[1];
-  var yys = birthd[2];
-  var mm = parseInt(mms);
-  var dd = parseInt(dds);
-
-  var yearc = yys.split("");
-  var cc = yearc[0].concat(yearc[1]);
-  var yy = yearc[2].concat(yearc[3]);
-  var cc = parseInt(cc);
-  var yy = parseInt(yy);
-  fd = Math.round( ( (cc/4) -2*cc-1) + ((5*yy/4) ) + ((26*(mm+1)/10)) + dd ) % 7;
-
-  if(!sex){
-    alert('No sex was selected. Try again.');
-    return false;
-  }
-  else if(sex === 'Female' && fd === 0){
-    alert("Akosua");
-  }
-  else if(sex === 'Male' && fd === 0){
-      alert("Kwasi");
-  }
-  else if(sex === 'Female' && fd === 1){
-    alert("Adwoa");
-  }
-  else if(sex === 'Male' && fd === 1){
-      alert("Kwadwo");
-  }
-  else if(sex === 'Female' && fd === 2){
-    alert("Abenaa");
-  }
-  else if(sex === 'Male' && fd === 2){
-      alert("Kwabena");
-  }
-  else if(sex === 'Female' && fd === 3){
-    alert("Akua");
-  }
-  else if(sex === 'Male' && fd === 3){
-      alert("Kwaku");
-  }
-  else if(sex === 'Female' && fd === 4){
-    alert("Yaa");
-  }
-  else if(sex === 'Male' && fd === 4){
-      alert("Yaw");
-  }
-  else if(sex === 'Female' && fd === 5){
-    alert("Afua");
-  }
-  else if(sex === 'Male' && fd === 5){
-      alert("Kofi");
-  }
-  else if(sex === 'Female' && fd === 6){
-    alert("Ama");
-  }
-  else if(sex === 'Male' && fd === 6){
-      alert("Kwame");
-  }else{
-      alert("Try Again");
-  }
-
-
-  }
-
-      </script>
-Message Input
-
-
-Message
-
-  height:40px;
-  background: #fb2525;
-  color: #fff;
-  font-size: 18px;
-  border-radius: 20px;
-}
-.akuta input[type="submit"]:hover{
-  cursor:pointer;
-  background: yellow;
-  color:#000;
-}
-h1 {
-  font-family: 'Times New Roman', Times, serif;
-  text-align: center;
-  color:white;
-  font-size: 50px;
-
-}
-p{
-  color: #fff;
-  text-align: center;
-  font-weight: bold;
-}
+  padding: 2%;
+ }
+ 
+ .description p{
+  font-size:18px;
+  font-weight:500;
+ }
+ 
+ .description ul{
+  font-size:18px;
+  font-weight:500;
+ }
+ 
+ #submit{
+ background-color: red;
+ padding: 3px 20px 2px 20px;
+ border: none;
+ color: white;
+ }
+ 
+ #day{
+  border: none;
+  padding: 5px;
+  color: rgb(0, 0, 0);
+  border-bottom: solid 1px grey;
+ }
+ 
+ #month{
+  border: none;
+  padding: 5px;
+  color: rgb(0, 0, 0);
+  border-bottom: solid 1px grey;
+ }
+ 
+ #year{
+  border: none;
+  padding: 5px;
+  color: rgb(0, 0, 0);
+  border-bottom: solid 1px grey;
+ }
+ 
+ ::placeholder {
+  color: rgb(0, 0, 0);
+  font-size:22px;
+  font-weight:400;
+ }
+ Message Input
+ 
+ 
+ Message Vinny_

@@ -1,48 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Naming system</title>
-  <link rel="stylesheet" href="styles.css" type="text/css">
-  <link href="main.js">
-
-
-
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Akan Names></title>
+   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap" rel="stylesheet">
+   <link href="css/style.css" rel="stylesheet" type="text/css">
+   <link rel="icon" href="images/flag9.jpg" type="image/jpg" sizes="16x16">
 </head>
 <body>
+<div class="container">
+<div class="row">
+<div class="col-md-2"></div>
+<div class="col-md-8 description">
+<h1>AKAN NAMES</h1>
+<p>\The Akan people of Ghana frequently name their children after the day of the <br>week they were born and the order in which they were born. ...<br> Many of the leaders of slave rebellions had "day names". </p>
 
-  <div class="header">
+<div class="col-md-2"></div>
+</div>
+<div class="row">
+<div class="col-md-1"></div>
+<div class="col-md-10" class="form">
+<form  class ="needs-validation" novalidate>
+<div class="form-group">
+<input type="number" id="day"  value="" placeholder="Day" min="1" max="31" >
+<div class="invalid-feedback">Please enter a valid day.</div>
+</div>
+<div>
+<input type="number" id="month"  value="" placeholder="Month" min="1" max="12" required>
+<div class="invalid-feedback">Please enter a valid month.</div>
+</div>
+<div>
+<input type="text" id="year"  value="" placeholder="Year" >
+<div class="invalid-feedback">Please enter a valid year.</div>
+</div>
+<div>
+<input type="radio" id="male"  name="gender" value="male"><strong>Male</strong>
+<div class="invalid-feedback">Please enter gender</div>
+</div>
+<div>
+<input type="radio" id="female"  name="gender" value="female" ><strong>Female</strong><br><br>
+<div class="invalid-feedback">Please enter gender</div>
+</div>
+<input type="submit" id="submit" onclick="getuserInfo()"  value="Submit">
+</form>
+</div>
+<div class="col-md-1"></div>
+</div>
+</div>
 
-    <h1><strong>AKAN NAMES</strong></h1>
-<p>The Akan people of Ghana frequently name their children after the day of the <br>week they were born and the order in which they were born. ...<br> Many of the leaders of slave rebellions had "day names". </p>
-  </div>
-  <div class="akuta">
-    
-    
-    
-    <h2>Input your details here</h2>
-    <form name="my-day" onsubmit="return validateform()" >
-      <p><em>Day</em></p>
-      <input type="text" id="day" name="DD" value="">  <br> <br>
-      <p><em>Month</em></p>
-      <input type="text" id="month" name="MM" value="">  <br> <br>
-      <p><em>Centuary</em></p>
-      <input type="text" id="centuary" name="cC" value="">   <br> <br>
-      <p><em>Year</em></p>
-      <input type="text" id="year" name="YY" value="">   <br> <br>
-      
-      
-      
-      <input type="radio" name="gender" value="male"> Male <br> <br> <br>
-      <input type="radio" name="gender" value="female">Female <br> <br> <br>
-      
-      <input type="submit" name="submit" value="submit">
-    </form>
-  </div>
-  <script src="main.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 
+<script>
+       // Example starter JavaScript for disabling form submissions if there are invalid fields
+       (function() {
+         "use strict";
+         window.addEventListener(
+           "load",
+           function() {
+             // Fetch all the forms we want to apply custom Bootstrap validation styles to
+             var forms = document.getElementsByClassName("needs-validation");
+             // Loop over them and prevent submission
+             var validation = Array.prototype.filter.call(forms, function(form) {
+               form.addEventListener(
+                 "click",
+                 function(event) {
+                   if (form.checkValidity() === false) {
+                     event.preventDefault();
+                     event.stopPropagation();
+                     document.getElementById("output").style.display = "none";
+                   }
+                   form.classList.add("was-validated");
+                 },
+                 false
+               );
+             });
+           },
+           false
+         );
+       })();
+     </script>
+     <script src="JS/main.js"></script>
 </body>
 </html>
