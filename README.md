@@ -1,6 +1,6 @@
 # My Portfolio website
 This is my second project on Akan names.
-#### By **John *Karanja N.*
+#### By **Sylvia Nyokabi.*
 ## Description
 In this website it is basically a calculator of age to display the akan name of a particular person depending on their gender.
 ## Steps to visit the Websites
@@ -8,7 +8,7 @@ In this website it is basically a calculator of age to display the akan name of 
 * An active internet
 * A computer or network access device
 * link to the website or the url
-* https://john-5014.github.io/Akan-names/ 
+* 
 
 ## Known Bugs
 The site had problems running the javascript when tried with visual studio.
@@ -22,4 +22,4 @@ incase you are not able to view certain applications or parts of the website fee
 
 ### License
 MIT
-Copyright (c)2019 **John Karanja N.**
+Copyright (c)2019 **Sylvia Nyokabi M.**
